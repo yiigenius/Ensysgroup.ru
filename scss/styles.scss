@@ -1,3 +1,77 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic);
 
-@import "_layout";  
+@import "settings";
+@import "base";
+@import "layout";
+@import "layout_nav";
+
+// _layout.scss
+
+.header {
+	background-color: $white-color;
+	margin-top: 45px;
+}
+
+.header-center {
+	@extend %center;
+	height:90px;
+}
+
+.header-logo {
+	float: left;
+	margin-top: 19px;
+}
+
+.header-phone {
+	float: right;
+	margin-top:30px;
+	width: $b-size;
+	font-size: 11px;
+}
+
+.header-phone-big {
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+.promo {
+	padding-top:45px;
+	overflow: hidden
+}
+
+.promo-center {
+	@extend %center;
+}
+
+.promo-big {
+	width: $b-size * 2 + $s-size;
+	height: $b-size * 2 + $s-size;
+	background-color: $white-color;
+	margin-right: $s-size;
+	background-image: url("../i/promo_big.jpg");
+	position: relative;
+	float: left;
+}
+
+.promo-big-texts {
+	width: 340px;
+	position: absolute;
+	bottom: 20px;
+	right:20px;
+	color: $white-color;
+	@include roboto;
+	
+	.big-font {
+		font-size: 48px;
+		line-height: 38px;
+		font-weight: 400;
+	}
+
+	.small-font {
+		font-size: 24px;
+		margin-top: 20px;
+		padding-top: 20px;
+		border-top: 4px solid $white-color;
+	}
+}

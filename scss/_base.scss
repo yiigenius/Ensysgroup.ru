@@ -1,0 +1,13 @@
+body {
+	@include tahoma;
+	background-image: url("../i/bg_page.jpg");
+}
+
+a {
+	color:$link-color;
+}
+
+%center {
+	width: $page-width;
+	margin: 0 auto;
+}
