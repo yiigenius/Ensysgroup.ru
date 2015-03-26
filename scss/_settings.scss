@@ -4,6 +4,8 @@ $s-size: 22px;
 
 $link-color: #b54640;
 $white-color: #fff;
+$d-red-color: #6b130f;
 
 @mixin roboto {font-family: 'Roboto Condensed', sans-serif;}
 @mixin tahoma {font-family: tahoma, sans-serif;}
+@mixin animation {transition: all 0.2s ease;}

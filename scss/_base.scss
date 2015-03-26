@@ -5,6 +5,11 @@ body {
 
 a {
 	color:$link-color;
+	@include animation;
+}
+
+a:hover {
+	color: $d-red-color;
 }
 
 %center {

@@ -37,7 +37,11 @@
 
 .promo {
 	padding-top:45px;
-	overflow: hidden
+	padding-bottom: $s-size;
+	overflow: hidden;
+	background-image: url("../i/bg_pttrn_grad.jpg");
+	background-repeat: repeat-x;
+	background-color: $white-color;
 }
 
 .promo-center {
@@ -73,5 +77,195 @@
 		margin-top: 20px;
 		padding-top: 20px;
 		border-top: 4px solid $white-color;
+	}
+}
+
+.promo-small {
+	width: $b-size;
+	height: $b-size * 2 + $s-size;
+	float: left;
+	position: relative;
+	margin-right: $s-size;
+	@include roboto;
+	font-size: 22px;
+
+	.about {
+		display: block;
+		background-image: url("../i/promo_01.jpg");
+		background-size: 100%;
+		background-position: center;
+		height: $b-size;
+		margin-bottom: $s-size;
+		position: relative;
+		color: $white-color;
+		@include animation;
+
+		span {
+			width: $b-size - 60px;
+			display: block;
+			position: absolute;
+			bottom: 20px;
+			right:20px;
+		}
+	}
+
+	.about:hover {
+		background-size: 110%;
+	}
+
+	.portfolio {
+		display: block;
+		background-image: url("../i/promo_02.jpg");
+		background-position: center;
+		background-size: 100%;
+		height: $b-size;
+		position: relative;
+		color: $white-color;
+		@include animation;
+
+		span {
+			width: $b-size - 60px;
+			display: block;
+			position: absolute;
+			bottom: 20px;
+			right:20px;
+		}
+	}
+
+	.portfolio:hover {
+		background-size: 110%;
+	}
+}
+
+.promo-news {
+	width: $b-size;
+	height: $b-size * 2 + $s-size;
+	float: right;
+	position: relative;
+	background-color: $white-color;
+	overflow: hidden;
+	font-size:13px;
+	line-height: 22px;
+
+	.index-news-grad {
+		width: $b-size;
+		height: 40px;
+		background-image: url("../i/index_news_grad.png");
+		position: absolute;
+		bottom: 0;
+	}
+
+	.title {
+		display: block;
+		background-color: $d-red-color;
+		height: 45px;
+		line-height: 45px;
+		color: $white-color;
+		padding-left: $s-size;
+		@include roboto;
+		font-size: 22px;
+		text-decoration: none;
+		margin-bottom: $s-size;
+	}
+
+	.title:hover {
+		background-color: $link-color;
+	}
+
+	.item {
+		margin: 0 $s-size $s-size $s-size;
+
+		.date {
+			font-size: 11px;
+		}
+	}
+}
+
+.services {
+	background-color: $white-color;
+	overflow: hidden;
+	font-size:13px;
+	line-height: $s-size;
+	color: #555;
+	padding-bottom: $s-size;
+}
+
+.services-center {
+	@extend %center;
+	display: flex;
+	justify-content: space-between;
+
+	.item {
+		width: $b-size;
+		float: left;
+	}
+
+	.title {
+		@include roboto;
+		font-size: 18px;
+		font-weight: 700;
+		margin: $s-size 0;
+	}
+}
+
+.f-nav {
+	padding: $s-size 0;
+}
+
+.f-nav-center {
+	@extend %center;
+	overflow: hidden;
+
+	ul {
+		width: $b-size - 50px;
+		float: left;
+		margin-right: $s-size;
+		@include roboto;
+		font-size: 22px;
+
+		a {text-decoration: none;color:#555;}
+		a:hover {color:$link-color;}
+
+		li ul {
+			font-size: 13px;
+			@include tahoma;
+			margin: $s-size 0;
+
+			li {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	// ul:nth-of-type(5n) {
+	// 	margin-right: 0;
+	// }
+
+	ul.n-inline {
+		margin-right: 0;
+		margin-bottom: $s-size;
+	}
+}
+
+.footer {
+	background-color: rgba(0,0,0,0.1);
+	padding: $s-size 0;
+}
+
+.footer-center {
+	@extend %center;
+	position: relative;
+
+	.info{
+		font-size: 13px;
+		line-height: $s-size;
+		color: #555;
+	}
+
+	img {
+		display: block;
+		position: absolute;
+		right: 0;
+		top:$s-size;
 	}
 }
