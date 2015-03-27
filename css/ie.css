@@ -1,0 +1,19 @@
+.nav-center ul {
+	display: block;
+	float: left;
+	width: 135px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.nav-center ul li ul {
+	display: none;
+}
+
+.services-center .item {
+	margin-right: 16px;
+}
+
+.content {
+	clear: both;
+}

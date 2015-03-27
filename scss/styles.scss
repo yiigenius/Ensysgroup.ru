@@ -201,6 +201,7 @@
 	}
 
 	.title {
+		display: block;
 		@include roboto;
 		font-size: 18px;
 		font-weight: 700;
@@ -209,7 +210,7 @@
 }
 
 .f-nav {
-	padding: $s-size 0;
+	padding: $s-size 0 0 0;
 }
 
 .f-nav-center {
@@ -269,3 +270,163 @@
 		top:$s-size;
 	}
 }
+
+.content {
+	background-image: url("../i/bg_pttrn_grad.jpg");
+	background-repeat: repeat-x;
+	background-color: $white-color;
+	overflow: hidden;
+}
+
+.content-title {
+	@extend %center;
+	padding: 30px 0;
+
+	.path {
+		font-size: 13px;
+		margin-bottom: 8px;
+	}
+}
+
+.content-center {
+	@extend %center;
+	background-color: $white-color;
+	min-height:380px;
+	margin-bottom: $s-size;
+
+	.left-col {
+		width: 680px;
+		margin: 24px;
+		float: left;
+		font-size: 15px;
+		line-height: $s-size;
+
+		p {
+			margin-top: 0;
+			margin-bottom: $s-size;
+		}
+	}
+
+	.right-col {
+		width: 198px;
+		margin-top: 24px;
+		margin-right: 24px;
+		float: right;
+		line-height: 16px;
+		font-size: 13px;
+
+		ul li {
+			margin-bottom: $s-size;
+		}
+
+		a.active-sublink {
+			color: #000;
+			text-decoration: none;
+			cursor: default;
+		}
+	}
+}
+
+.one-col {
+	.left-col {
+		margin: 24px;
+		width: 906px;
+	}
+
+	.right-col {
+		display: none;
+	}
+}
+
+.b-news-item {
+	overflow: hidden;
+	margin-bottom: $s-size;
+
+	.date {
+		width: 100px;
+		margin-right: $s-size;
+		float: left;
+		font-size: 11px;
+		text-align: center;
+		border-right: 1px solid #ccc;
+		padding-right: 20px;
+
+		.date-number {
+		font-size: 50px;
+		line-height: 50px;
+		@include roboto;
+		font-weight: 700;
+		}
+	}
+
+	.b-news-link{
+		color: #555;
+		height:70px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.b-news-link:hover {
+		color: $link-color;
+	}
+}
+
+.pager {
+	clear: both;
+	width:$page-width;
+	margin: $s-size auto;
+	text-align: center;
+	overflow: hidden;
+	display:flex;
+	justify-content:center;
+
+	a {
+		background-color: $link-color;
+		width: 30px;
+		display: block;
+		float: left;
+		margin-right: 1px;
+		color: $white-color;
+		text-decoration: none;
+		padding: 5px;
+		font-size: 13px;
+	}
+
+	:hover {
+			background-color: $d-red-color;
+		}
+
+	.active {
+		background-color: $white-color;
+		color: #555;
+		cursor: default;
+	}
+
+	.arr {
+		background-color: $white-color;
+		color: #555;
+	}
+
+	a.arr:hover {
+		background-color: $d-red-color;
+		color: $white-color;
+	}
+}
+
+.gallery {
+		overflow: hidden;
+
+		a {
+			display: block;
+			width: 200px;
+			height: 150px;
+			float: left;
+			margin: 0 $s-size $s-size 0;
+			background-size: cover;
+			background-position: center;
+		}
+
+		a:hover {
+			opacity: 0.8;
+		}
+	}

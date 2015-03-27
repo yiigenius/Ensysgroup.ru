@@ -12,6 +12,13 @@ a:hover {
 	color: $d-red-color;
 }
 
+h1 {
+	font-weight: 400;
+	@include roboto;
+	font-size: 30px;
+	margin: 0;
+}
+
 %center {
 	width: $page-width;
 	margin: 0 auto;

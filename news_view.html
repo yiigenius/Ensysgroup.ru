@@ -10,13 +10,18 @@
 
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie.css"><![endif]-->
 
+	<link rel="stylesheet" href="css/lightbox.css" media="screen"/>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script>
+
 </head>
 
 <body>
 <div class="page">
 	<div class="header">
 		<div class="header-center">
-			<div class="header-logo"><img src="i/logo.png" alt="Группа компаний «Инженерные системы»"></div>
+			<a href="index.html" class="header-logo"><img src="i/logo.png" alt="Группа компаний «Инженерные системы»"></a>
 			
 			<div class="header-phone">
 				Федеральный аварийный номер:
@@ -100,67 +105,39 @@
 		</div>
 	</div>
 
-	<div class="promo">
-		<div class="promo-center">
-			<div class="promo-big">
-				<div class="promo-big-texts">
-					<div class="big-font">Команда профессионалов</div>
-					<div class="small-font">cпособная решать<br>любые задачи по строительству <br>и реконструкции объектов</div>
-				</div>
+	<div class="content">
+		<div class="content-title">
+			<div class="path"><a href="index.html">Главная</a> / <a href="about.html">О компании</a> / <a href="news.html">Новости</a></div>
+			<h1>Обеспечиваем техническое обслуживание крупного торгового центра в Москве, Россия</h1>
+		</div>
+		<div class="content-center">
+			<div class="left-col">
+				<p>С точки зрения Североатлантического альянса, большое количество внезапных проверок боеготовности, проводимых в российских вооруженных силах, не способствует поддержанию стабильности. Об этом сообщил генсек НАТО Йенс Столтенберг в интервью радиостанции Voice of America.</p>
+
+				<div class="gallery">
+					<a href="files/01.jpg" class="gallery-item"  data-lightbox="example-set" style="background-image: url(files/01s.jpg);"></a>
+					<a href="files/02.jpg" class="gallery-item"  data-lightbox="example-set" style="background-image: url(files/02s.jpg);"></a>
+					<a href="files/03.jpg" class="gallery-item"  data-lightbox="example-set" style="background-image: url(files/03s.jpg);"></a>
+					<a href="files/04.jpg" class="gallery-item"  data-lightbox="example-set" style="background-image: url(files/04s.jpg);"></a>
+					<a href="files/05.jpg" class="gallery-item"  data-lightbox="example-set" style="background-image: url(files/05s.jpg);"></a>
+					<a href="files/06.jpg" class="gallery-item"  data-lightbox="example-set" style="background-image: url(files/06s.jpg);"></a>
+					<a href="files/07.jpg" class="gallery-item"  data-lightbox="example-set" style="background-image: url(files/07s.jpg);"></a>
+				</div>		
 			</div>
-
-			<div class="promo-small">
-				<a href="about.html" class="about"><span>О компании</span></a>
-				<a href="projects.html" class="portfolio"><span>Реализованные проекты</span></a>
-			</div>
-
-			<div class="promo-news">
-				<div class="index-news-grad"></div>
-				<a href="news.html" class="title">Новости</a>
-				<div class="item">
-					<div class="date">18 февраля 2015 г.</div>
-					<a href="news_view.html" class="news-item-link">Обеспечиваем техническое обслуживание крупного торгового центра в Москве, Россия</a>
-				</div>
-
-				<div class="item">
-					<div class="date">18 февраля 2015 г.</div>
-					<a href="news_view.html" class="news-item-link">Новый Договор на обслуживание сети кофеен Starbucks</a>
-				</div>
-
-				<div class="item">
-					<div class="date">18 февраля 2015 г.</div>
-					<a href="news_view.html" class="news-item-link">Участие в бизнес-форуме финских компаний в Московской области.</a>
-				</div>
+			<div class="right-col">
+				<ul>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="#">История Компании</a></li>
+					<li><a href="#">Концепция развития</a></li>
+					<li><a href="#">Политика в области качества</a></li>
+					<li><a href="#">Экологическая политика</a></li>
+					<li><a href="#">Структура компании</a></li>
+					<li><a href="#">Кадровая политика</a></li>
+					<li><a href="#">Социальная ответственность</a></li>
+				</ul>
 			</div>
 		</div>
-	</div>
 
-	<div class="services">
-		<div class="services-center">
-			<div class="item">
-				<a href="#"><img src="i/services_01.jpg" height="132" width="222" alt=""></a>
-				<a href="#" class="title">Проектные работы</a>
-				<div class="description">В отделе комплексного проектирования работают высококлассные специалисты, имеющие богатый опыт проектных работ.</div>
-			</div>
-
-			<div class="item">
-				<a href="#"><img src="i/services_02.jpg" height="132" width="222" alt=""></a>
-				<a href="#" class="title">Пусконаладочные работы</a>
-				<div class="description">Специалистами компании накоплен огромный опыт в области проведения пуско-наладочных работ, как отечественного, так и импортного оборудования.</div>
-			</div>
-
-			<div class="item">
-				<a href="#"><img src="i/services_03.jpg" height="132" width="222" alt=""></a>
-				<a href="#" class="title">Монтажные работы</a>
-				<div class="description">Обладая всеми необходимыми лицензиями и допусками (СРО), наша монтажная служба выполняет полный спектр работ по установке систем кондиционирования, вентиляции и отопления.</div>
-			</div>
-
-			<div class="item">
-				<a href="#"><img src="i/services_04.jpg" height="132" width="222" alt=""></a>
-				<a href="#" class="title">Сервис и эксплуатация</a>
-				<div class="description">Компания «Инженерные Cистемы» осуществляет сервисное обслуживания систем кондиционирования, вентиляции, отопления и водоснабжения.</div>
-			</div>
-		</div>
 	</div>
 
 	<div class="f-nav">
@@ -242,6 +219,8 @@
 	</div>
 
 </div>
+
+
 </body>
 
 </html>

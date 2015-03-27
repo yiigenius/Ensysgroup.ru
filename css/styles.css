@@ -10,7 +10,13 @@ a {
 a:hover {
   color: #6b130f; }
 
-.nav-center, .header-center, .promo-center, .services-center, .f-nav-center, .footer-center {
+h1 {
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+  margin: 0; }
+
+.nav-center, .header-center, .promo-center, .services-center, .f-nav-center, .footer-center, .content-title, .content-center {
   width: 954px;
   margin: 0 auto; }
 
@@ -233,13 +239,14 @@ nav ul li:hover ul li:hover ul li a:hover {
     width: 222px;
     float: left; }
   .services-center .title {
+    display: block;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin: 22px 0; }
 
 .f-nav {
-  padding: 22px 0; }
+  padding: 22px 0 0 0; }
 
 .f-nav-center {
   overflow: hidden; }
@@ -279,5 +286,118 @@ nav ul li:hover ul li:hover ul li a:hover {
     position: absolute;
     right: 0;
     top: 22px; }
+
+.content {
+  background-image: url("../i/bg_pttrn_grad.jpg");
+  background-repeat: repeat-x;
+  background-color: #fff;
+  overflow: hidden; }
+
+.content-title {
+  padding: 30px 0; }
+  .content-title .path {
+    font-size: 13px;
+    margin-bottom: 8px; }
+
+.content-center {
+  background-color: #fff;
+  min-height: 380px;
+  margin-bottom: 22px; }
+  .content-center .left-col {
+    width: 680px;
+    margin: 24px;
+    float: left;
+    font-size: 15px;
+    line-height: 22px; }
+    .content-center .left-col p {
+      margin-top: 0;
+      margin-bottom: 22px; }
+  .content-center .right-col {
+    width: 198px;
+    margin-top: 24px;
+    margin-right: 24px;
+    float: right;
+    line-height: 16px;
+    font-size: 13px; }
+    .content-center .right-col ul li {
+      margin-bottom: 22px; }
+    .content-center .right-col a.active-sublink {
+      color: #000;
+      text-decoration: none;
+      cursor: default; }
+
+.one-col .left-col {
+  margin: 24px;
+  width: 906px; }
+.one-col .right-col {
+  display: none; }
+
+.b-news-item {
+  overflow: hidden;
+  margin-bottom: 22px; }
+  .b-news-item .date {
+    width: 100px;
+    margin-right: 22px;
+    float: left;
+    font-size: 11px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding-right: 20px; }
+    .b-news-item .date .date-number {
+      font-size: 50px;
+      line-height: 50px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700; }
+  .b-news-item .b-news-link {
+    color: #555;
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle; }
+  .b-news-item .b-news-link:hover {
+    color: #b54640; }
+
+.pager {
+  clear: both;
+  width: 954px;
+  margin: 22px auto;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; }
+  .pager a {
+    background-color: #b54640;
+    width: 30px;
+    display: block;
+    float: left;
+    margin-right: 1px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 13px; }
+  .pager :hover {
+    background-color: #6b130f; }
+  .pager .active {
+    background-color: #fff;
+    color: #555;
+    cursor: default; }
+  .pager .arr {
+    background-color: #fff;
+    color: #555; }
+  .pager a.arr:hover {
+    background-color: #6b130f;
+    color: #fff; }
+
+.gallery {
+  overflow: hidden; }
+  .gallery a {
+    display: block;
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin: 0 22px 22px 0;
+    background-size: cover;
+    background-position: center; }
+  .gallery a:hover {
+    opacity: 0.8; }
 
 /*# sourceMappingURL=styles.css.map */
